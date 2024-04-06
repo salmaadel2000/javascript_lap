@@ -1,0 +1,72 @@
+<html>
+<haed>
+    <style>
+        body {
+            margin: 50px;
+            font-weight: bold;
+            background-color: palegreen;
+        }
+
+        [type=text],
+        [type=button] {
+            width:200 ;
+        }
+
+        table {
+            width: 400px;
+            background-color: rgba(0, 255, 255, 0.397);
+        }
+
+        .SD {
+            background-color: purple;
+        }
+
+        .OS {
+            background-color: blue;
+        }
+
+        .DotNet {
+            background-color: green;
+        }
+
+        .btn {
+            background-color:transparent;
+            border: none;
+            font-size: 16px;
+        }
+        .icons {
+            color: red;
+        }
+    </style>
+    <script src="callingFunc.js"></script>
+    <script src="form.js"></script>
+</haed>
+
+<body>
+    <form>
+        <table border="2" cellpadding="2" cellspacing="5">
+            <tr >
+                <td>Department</td>
+                <td><input name="department" type="radio" value="SD">bd</td>
+                <td><input name="department" type="radio" value="OS">os</td>
+                <td><input name="department" type="radio" value="DotNet" checked>Ai</td>
+            </tr>
+            <tr >
+                <td colspan="2"> Name</td>
+                <td colspan="2"><input name="studentName" type="text" required></td>
+            </tr>
+            <tr >
+                <td colspan="2">Grade</td>
+                <td colspan="2"><input name="studentGrade" type="text" required></td>
+            </tr>
+            <tr >
+                <td colspan="2">
+                    <input type="button" value="Add">
+                </td>
+            </tr>
+          
+        </table>
+    </form>
+</body>
+
+</html>
